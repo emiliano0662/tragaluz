@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: #FFFFFF;
     box-shadow: none !important;
     outline: none !important;
 }
@@ -26,27 +27,9 @@ html {
 }
 
 body {
-    padding: 15px;
     position: relative;
     overflow-x: hidden;
-    background: #FFFFFF;
-
-    // Breakpoints
-    @include respond-to($phone) {
-        padding: 0px;
-    }
-
-    @include respond-to($phone-tablet) {
-        padding: 0px;
-    }
-
-    @include respond-to($tablet-medium) {
-        padding: 0px;
-    }
-
-    @include respond-to($medium-large) {
-        padding: 0px;
-    }
+    background: #000000;
 }
 
 header,
@@ -56,8 +39,6 @@ section {
     float: left;
     position: relative;
 }
-
-/*Estilos generales*/
 
 /*Título*/
 h1 {
@@ -91,54 +72,18 @@ h1 {
     }
 }
 
-h2 {
-    width: 100%;
-    letter-spacing: 0;
-    line-height: 60px;
-    font-weight: 600;
-    font-size: 60px;
-    color: #000000;
-
-    // Breakpoints
-    @include respond-to($phone) {
-        line-height: 60px !important;
-        font-size: 45px !important;
-    }
-
-    @include respond-to($phone-tablet) {
-        line-height: 60px !important;
-        font-size: 45px !important;
-    }
-
-    &.type-one {
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        background: transparent url('../img/bg-title-h2.png') left bottom / 134px 4px no-repeat;
-    }
-
-    &.type-two {
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        color: #FFFFFF;
-        background: transparent url('../img/bg-title-white-h2.png') left bottom / 134px 4px no-repeat;
-    }
-}
-
 /*Parrafos*/
 p {
-    width: 100%;
     margin-bottom: 30px;
     letter-spacing: 0;
     line-height: 30px;
     font-size: 16px;
-    color: $color-primary;
 }
 
 /*Botones*/
 .btn-primary {
     padding: 15px 51px 15px 26px;
     border: none;
-    font-family: "Playfair Display";
     font-style: italic;
     letter-spacing: 0;
     line-height: 21px;
@@ -148,25 +93,6 @@ p {
     -moz-border-radius: 0px;
     border-radius: 0px;
     background: #718903 url('../img/btn-arrow.png') calc(100% - 29px) center / 16px auto no-repeat;
-
-    &:hover {
-        background-color: $color-secondary;
-    }
-}
-
-.btn-secondary {
-    padding: 15px 51px 15px 26px;
-    border: none;
-    font-family: "Playfair Display";
-    font-style: italic;
-    letter-spacing: 0;
-    line-height: 21px;
-    font-size: 16px;
-    color: #FFFFFF;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    background: rgba(0, 0, 0, 0.3) url('../img/btn-arrow.png') calc(100% - 29px) center / 16px auto no-repeat;
 
     &:hover {
         background-color: $color-secondary;

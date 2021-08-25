@@ -1,0 +1,69 @@
+.block-text-link {
+    padding: 40px 0px;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($medium-large) {
+        padding: 30px 0px;
+    }
+
+    .pe-lg-5 {
+        border-right: 2px solid #FFFFFF;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 25px;
+            border-right: none;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 25px;
+            border-right: none;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 25px;
+            border-right: none;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 25px;
+            border-right: none;
+            border-bottom: 2px solid #FFFFFF;
+        }
+    }
+
+    h2 {
+        margin: 0px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+
+        li {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

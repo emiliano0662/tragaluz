@@ -1,28 +1,53 @@
 header {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 99999;
 
     .navbar {
-        padding: 25px 65px;
-        background-color: transparent !important;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.65) !important;
 
         // Breakpoints
         @include respond-to($phone) {
-            padding: 15px 0px;
+            padding: 10px 0px;
         }
 
         @include respond-to($phone-tablet) {
-            padding: 15px 0px;
+            padding: 10px 0px;
         }
 
         @include respond-to($tablet-medium) {
-            padding: 15px 0px;
+            padding: 10px 0px;
         }
 
         @include respond-to($medium-large) {
-            padding: 15px 0px;
+            padding: 10px 0px;
         }
 
         .navbar-brand {
             padding: 0px;
+
+            .img-fluid {
+                max-width: 150px;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    max-width: 80px;
+                }
+
+                @include respond-to($phone-tablet) {
+                    max-width: 80px;
+                }
+
+                @include respond-to($tablet-medium) {
+                    max-width: 80px;
+                }
+
+                @include respond-to($medium-large) {
+                    max-width: 80px;
+                }
+            }
         }
 
         .navbar-toggler {

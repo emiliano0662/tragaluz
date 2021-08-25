@@ -1,1 +1,116 @@
-footer {}
+footer {
+
+    .section-main {
+        padding: 40px 0px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding: 0px 0px 30px 0px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding: 0px 0px 30px 0px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding: 0px 0px 30px 0px;
+        }
+
+        @include respond-to($medium-large) {
+            padding: 0px 0px 30px 0px;
+        }
+
+        .w-50 {
+
+            // Breakpoints
+            @include respond-to($phone) {
+                width: 100% !important;
+            }
+
+            @include respond-to($phone-tablet) {
+                width: 100% !important;
+            }
+
+            @include respond-to($tablet-medium) {
+                width: 100% !important;
+            }
+
+            @include respond-to($medium-large) {
+                width: 100% !important;
+            }
+        }
+
+        .pe-lg-5 {
+            border-right: 2px solid #FFFFFF;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-right: none;
+                border-bottom: 2px solid #FFFFFF;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-right: none;
+                border-bottom: 2px solid #FFFFFF;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-right: none;
+                border-bottom: 2px solid #FFFFFF;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-right: none;
+                border-bottom: 2px solid #FFFFFF;
+            }
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-size: 16px;
+            color: #FFFFFF;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    .section-copy {
+        padding-bottom: 30px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding-bottom: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding-bottom: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding-bottom: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            padding-bottom: 15px;
+        }
+
+        p {
+            margin: 0px;
+            text-align: center;
+        }
+    }
+}
