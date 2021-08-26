@@ -113,4 +113,39 @@ footer {
             text-align: center;
         }
     }
+
+    &.type-border-top {
+        padding-top: 30px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            padding-top: 15px;
+        }
+
+        &::after {
+            width: 80%;
+            height: 1px;
+            top: 0px;
+            left: 10%;
+            position: absolute;
+            background-color: #FFFFFF;
+            content: '';
+        }
+
+        .section-main {
+            display: none;
+        }
+    }
 }

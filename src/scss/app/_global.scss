@@ -40,38 +40,6 @@ section {
     position: relative;
 }
 
-/*Título*/
-h1 {
-    width: 100%;
-    margin: 0px;
-    letter-spacing: -1.01px;
-    line-height: 90px;
-    font-weight: 700;
-    font-size: 84px;
-    color: #000000;
-
-    // Breakpoints
-    @include respond-to($phone) {
-        line-height: 45px;
-        font-size: 45px;
-    }
-
-    @include respond-to($phone-tablet) {
-        line-height: 45px;
-        font-size: 45px;
-    }
-
-    @include respond-to($tablet-medium) {
-        line-height: 45px;
-        font-size: 45px;
-    }
-
-    @include respond-to($medium-large) {
-        line-height: 45px;
-        font-size: 45px;
-    }
-}
-
 /*Parrafos*/
 p {
     margin-bottom: 30px;
