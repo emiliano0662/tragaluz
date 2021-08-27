@@ -112,6 +112,31 @@ footer {
             margin: 0px;
             text-align: center;
         }
+
+        a {
+            margin: 0px 10px;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                padding-top: 15px;
+            }
+
+            @include respond-to($phone-tablet) {
+                padding-top: 15px;
+            }
+
+            @include respond-to($tablet-medium) {
+                padding-top: 15px;
+            }
+
+            @include respond-to($medium-large) {
+                padding-top: 15px;
+            }
+
+            .lni {
+                font-size: 25px;
+            }
+        }
     }
 
     &.type-border-top {

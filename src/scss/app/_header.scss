@@ -11,18 +11,22 @@ header {
         // Breakpoints
         @include respond-to($phone) {
             padding: 10px 0px;
+            background-color: #000000 !important;
         }
 
         @include respond-to($phone-tablet) {
             padding: 10px 0px;
+            background-color: #000000 !important;
         }
 
         @include respond-to($tablet-medium) {
             padding: 10px 0px;
+            background-color: #000000 !important;
         }
 
         @include respond-to($medium-large) {
             padding: 10px 0px;
+            background-color: #000000 !important;
         }
 
         .navbar-brand {
@@ -75,29 +79,8 @@ header {
 
             .navbar-nav {
 
-                // Breakpoints
-                @include respond-to($phone) {
-                    padding: 0px 10px;
-                    background-color: rgba(255, 255, 255, 0.9);
-                }
-
-                @include respond-to($phone-tablet) {
-                    padding: 0px 10px;
-                    background-color: rgba(255, 255, 255, 0.9);
-                }
-
-                @include respond-to($tablet-medium) {
-                    padding: 0px 10px;
-                    background-color: rgba(255, 255, 255, 0.9);
-                }
-
-                @include respond-to($medium-large) {
-                    padding: 0px 10px;
-                    background-color: rgba(255, 255, 255, 0.9);
-                }
-
                 .nav-item {
-                    margin-right: 50px;
+                    margin-right: 30px;
 
                     // Breakpoints
                     @include respond-to($phone) {
@@ -122,11 +105,9 @@ header {
 
                     .nav-link {
                         padding: 0px;
-                        letter-spacing: -0.17px;
-                        line-height: 21px;
-                        font-weight: 700;
-                        font-size: 14px;
-                        color: #000000;
+                        font-style: italic;
+                        font-size: 16px;
+                        color: #FFFFFF;
 
                         // Breakpoints
                         @include respond-to($phone) {
@@ -150,12 +131,54 @@ header {
                         }
                     }
 
+                    &.dropdown {
+
+                        .dropdown-toggle::after {
+                            display: none;
+                        }
+
+                        .dropdown-menu {
+                            margin-top: 5px;
+                            background-color: rgba(0, 0, 0, 0.65);
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            border-radius: 0px;
+
+                            // Breakpoints
+                            @include respond-to($phone) {
+                                margin-top: 0px;
+                            }
+
+                            @include respond-to($phone-tablet) {
+                                margin-top: 0px;
+                            }
+
+                            @include respond-to($tablet-medium) {
+                                margin-top: 0px;
+                            }
+
+                            @include respond-to($medium-large) {
+                                margin-top: 0px;
+                            }
+
+                            li {
+
+                                a {
+                                    font-style: italic;
+                                    font-size: 16px;
+                                    color: #FFFFFF;
+
+                                    &:hover {
+                                        text-decoration: underline !important;
+                                        background-color: transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     &:last-child {
                         margin-right: 0px;
-
-                        .nav-link {
-                            color: $color-sixth;
-                        }
                     }
                 }
             }

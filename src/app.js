@@ -14,7 +14,9 @@ var wow = new WOW({
 
 /*Todos los "load" cargan los bloques recurrentes*/
 $('header').load("header.html");
-$('footer').load("footer.html");
+$('footer').load("footer.html", function() {
+    wow.init();
+});
 
 /*Script para el slider del home*/
 if ($.contains(document.body, document.getElementById('slider-main'))) {
