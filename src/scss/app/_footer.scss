@@ -173,4 +173,29 @@ footer {
             display: none;
         }
     }
+
+    &.type-internal {
+        padding-top: 30px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            padding-top: 15px;
+        }
+
+        .section-main {
+            display: none;
+        }
+    }
 }

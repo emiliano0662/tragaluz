@@ -14030,6 +14030,32 @@ footer.type-border-top::after {
 footer.type-border-top .section-main {
   display: none;
 }
+footer.type-internal {
+  padding-top: 30px;
+}
+@media only screen and (max-width: 479px) {
+  footer.type-internal {
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  footer.type-internal {
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 849px) {
+  footer.type-internal {
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 990px) {
+  footer.type-internal {
+    padding-top: 15px;
+  }
+}
+footer.type-internal .section-main {
+  display: none;
+}
 
 .block-banner-main .swiper-container .swiper-wrapper .swiper-slide {
   width: 100%;
@@ -14462,4 +14488,37 @@ footer.type-border-top .section-main {
 }
 .block-list-main .container-items:hover .container-image .bg-img, .block-list-main .container-items:focus .container-image .bg-img {
   transform: scale(1.1);
+}
+
+.block-banner-internal {
+  height: 870px;
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media only screen and (max-width: 479px) {
+  .block-banner-internal {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .block-banner-internal {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 849px) {
+  .block-banner-internal {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 990px) {
+  .block-banner-internal {
+    height: 300px;
+  }
+}
+
+.block-internal-main {
+  padding: 100px 0px;
+  background-color: #FFFFFF;
 }
