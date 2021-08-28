@@ -1,0 +1,53 @@
+.block-internal-title {
+    padding: 100px 0px 30px 0px;
+    background-color: #FFFFFF;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 60px 0px 30px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 60px 0px 30px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 60px 0px 30px 0px;
+    }
+
+    @include respond-to($medium-large) {
+        padding: 60px 0px 30px 0px;
+    }
+
+    h1 {
+        margin: 0px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        font-size: 60px;
+        color: #000000;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            font-size: 45px;
+        }
+
+        @include respond-to($phone-tablet) {
+            font-size: 45px;
+        }
+
+        @include respond-to($tablet-medium) {
+            font-size: 45px;
+        }
+
+        @include respond-to($medium-large) {
+            font-size: 45px;
+        }
+    }
+
+    small {
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+    }
+}
