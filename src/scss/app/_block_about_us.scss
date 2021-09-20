@@ -1,26 +1,26 @@
 .block-about-us {
-    padding: 150px 0px 100px 0px;
+    padding: 190px 0px 100px 0px;
 
     // Breakpoints
     @include respond-to($phone) {
-        padding: 60px 0px;
+        padding: 120px 0px 60px 0px;
     }
 
     @include respond-to($phone-tablet) {
-        padding: 60px 0px;
+        padding: 120px 0px 60px 0px;
     }
 
     @include respond-to($tablet-medium) {
-        padding: 60px 0px;
+        padding: 120px 0px 60px 0px;
     }
 
     @include respond-to($medium-large) {
-        padding: 60px 0px;
+        padding: 120px 0px 60px 0px;
     }
 
     h2 {
         margin-bottom: 0px;
-        font-size: 45px;
+        font-size: 2.5rem;
     }
 
     p {
