@@ -1,5 +1,13 @@
 footer {
 
+    &.margin-height-100vh {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .section-main {
         padding: 40px 0px;
 
@@ -111,6 +119,8 @@ footer {
         p {
             margin: 0px;
             text-align: center;
+            line-height: 24px;
+            font-size: 10px;
         }
 
         a {
